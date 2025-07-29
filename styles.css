@@ -1,73 +1,119 @@
-/* Basic reset */
+/* Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Body and html settings */
-html,
-body {
-    font-family: Arial, sans-serif;
-    height: 100%;
+body, html {
+    font-family: 'Inter', sans-serif;
+    background-color: #0f0f17;
+    color: #ffffff;
+    min-height: 100vh;
 }
 
-/* Header styles */
+/* Header */
 header {
-    background-color: #333;
-    color: #fff;
-    padding: 1em;
+    background: #1a1a2e;
+    color: #00ffcc;
     text-align: center;
+    padding: 1.5em;
+    font-size: 1.1em;
+    font-weight: 600;
+    border-bottom: 2px solid #00ffcc33;
 }
 
-/* Main content styles */
+/* Main */
 main {
-    background-image: url('nochance_bg.png');
-    background-size: cover;
-    background-position: center;
-    height: calc(100vh - 160px);
-    /* Adjust based on header and footer height */
+    padding: 2em 1em 5em;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    text-align: center;
 }
 
-main .content {
-    background-color: rgba(255, 255, 255, 0.8);
+.content {
+    background: #1f1f2e;
     padding: 2em;
-    border-radius: 10px;
-}
-
-main .content p {
-    margin-bottom: 1em;
-    font-size: medium;
-    font-weight: 600;
-}
-
-main .content button {
-    padding: 0.5em 1em;
-    font-size: large;
-    font-weight: 600;
-    cursor: pointer;
-    background-color: #ff9900;
-}
-
-/* Footer styles */
-footer {
-    background-color: #333;
-    color: #fff;
+    border-radius: 12px;
+    max-width: 700px;
+    width: 90%;
+    margin-bottom: 2em;
+    box-shadow: 0 0 15px rgba(0, 255, 204, 0.1);
     text-align: center;
-    padding: 1em;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
 }
 
-/* Responsive styles */
-@media (max-width: 600px) {
-    main .content {
-        width: 90%;
-        padding: 1em;
-    }
+.content h1 {
+    margin-bottom: 1em;
+    color: #00ffcc;
+}
+
+.content p {
+    margin-bottom: 1em;
+    color: #dddddd;
+    line-height: 1.5em;
+}
+
+.connect-wallet {
+    background: #00ffcc;
+    color: #000;
+    font-weight: bold;
+    padding: 0.8em 1.5em;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s ease;
+}
+
+.connect-wallet:hover {
+    background: #00e6b3;
+}
+
+/* Criteria Section */
+.criteria {
+    background: #14141f;
+    border: 1px solid #222;
+    padding: 2em;
+    border-radius: 12px;
+    max-width: 700px;
+    width: 90%;
+}
+
+.criteria h2 {
+    margin-bottom: 1em;
+    color: #00ffcc;
+    text-align: center;
+}
+
+.criteria ul {
+    list-style: none;
+    margin-bottom: 1em;
+}
+
+.criteria li {
+    margin-bottom: 0.75em;
+    padding-left: 1.2em;
+    position: relative;
+}
+
+.criteria li::before {
+    content: "✔";
+    position: absolute;
+    left: 0;
+    color: #00ffcc;
+}
+
+.criteria p {
+    text-align: center;
+    color: #bbbbbb;
+}
+
+/* Footer */
+footer {
+    background: #1a1a2e;
+    color: #888;
+    text-align: center;
+    padding: 1.5em;
+    font-size: 0.9em;
+    border-top: 1px solid #00ffcc33;
 }
