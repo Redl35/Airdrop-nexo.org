@@ -10,6 +10,14 @@ body, html {
     background-color: #0f0f17;
     color: #ffffff;
     min-height: 100vh;
+
+    /* ✅ Fixed: Working dark background image with overlay */
+    background-image: linear-gradient(rgba(15, 15, 23, 0.85), rgba(15, 15, 23, 0.85)),
+        url('https://images.unsplash.com/photo-1634746713252-3f5f3c4b79b0?auto=format&fit=crop&w=1470&q=80');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 /* Header */
@@ -45,12 +53,14 @@ main {
 .content h1 {
     margin-bottom: 1em;
     color: #00ffcc;
+    font-size: 28px;
 }
 
 .content p {
     margin-bottom: 1em;
     color: #dddddd;
-    line-height: 1.5em;
+    line-height: 1.6em;
+    font-size: 16px;
 }
 
 .connect-wallet {
@@ -83,6 +93,7 @@ main {
     margin-bottom: 1em;
     color: #00ffcc;
     text-align: center;
+    font-size: 24px;
 }
 
 .criteria ul {
@@ -94,6 +105,7 @@ main {
     margin-bottom: 0.75em;
     padding-left: 1.2em;
     position: relative;
+    font-size: 15px;
 }
 
 .criteria li::before {
@@ -106,6 +118,7 @@ main {
 .criteria p {
     text-align: center;
     color: #bbbbbb;
+    font-size: 15px;
 }
 
 /* Footer */
